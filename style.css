@@ -1,0 +1,52 @@
+/* COMMENTS HERE */
+
+body {
+      text-align: center;
+  }
+
+header {
+  background-color: lightgray;
+  min-height: 50px;
+}
+
+h1 {
+  /*text-align: center;*/
+  font-size: 60px;
+  }
+
+p {
+    /*text-align: center;*/
+  }
+
+  .grid {
+    background: white;
+    height: 400px;
+    width: 400px;
+    background-color: lightgray;
+    margin: 0 auto;
+}
+  .square {
+    height: 100px;
+    width: 100px;
+    border: 6px solid #949599;
+    float: left;
+  }
+
+  .clear {
+    clear: both;
+  }
+
+  .odd_square {
+    background: black;
+    color: white;
+  }
+    /* May have to specify sides: border-top, border-right, border-bottom, and border-left.*/
+    /*  or border-bottom-width: 12px;*/
+
+    /* use this to round the corners on the 4 sqaures of the grid: border-radius: 5px;
+    /*     four values will round the top-left, top-right, bottom-right, and bottom-left corners in that order.
+    /*   Maybe box-sizing: border-box; */
+
+  div.even_square {
+    background: orange;
+  }
