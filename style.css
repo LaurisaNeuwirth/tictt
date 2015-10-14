@@ -18,6 +18,21 @@ p {
     /*text-align: center;*/
   }
 
+  .button{
+    position: fixed;
+    left: 130px;
+    background-color: white;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    border-radius:26px;
+    color: black;
+    font-family: Arial;
+    font-size: 40px;
+    text-decoration: none;
+    cursor: pointer;
+    border:none;
+}
+
   .grid {
     background: white;
     height: 400px;
