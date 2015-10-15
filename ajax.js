@@ -1,6 +1,6 @@
 'use strict';
 //id of each game as it's played
-var gameId, gameToken;
+var gameId, gameToken, callback;
 
 var tttapi = {
   gameWatcher: null,
@@ -127,7 +127,7 @@ $(function() {
     return wrapper;
   };
 
-  var callback = function callback(error, data) {
+  callback = function callback(error, data) {
     if (error) {
       console.error(error);
       $('#result').val('status: ' + error.status + ', error: ' +error.error);

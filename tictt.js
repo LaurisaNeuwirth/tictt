@@ -115,10 +115,27 @@ $(document).ready(function(){
 
     //write an X into the clicked square
     $(squareClickedOn).html(currentPlayer); // ui
+debugger;
+
+    // This is the object, which will be turned into JSON
+    // to be sent to the backend server to record a cell change.
+    var cellData = {
+      "game": {
+        "cell": {
+          "index": squareClickedId,
+          "value": currentPlayer
+        },
+        "over": false
+      }
+    };
+
+    //invoke markedCells
+    tttapi.markCell(gameId, cellData, gameToken, callback);
 
     //TO DO:
     //Keep track of the moves by updating the currentGameState array with the new move
     currentGameState[squareClickedId]=currentPlayer;
+
 
     //debug to see if the array updates
     //create a function to put index number and value of current game state array
@@ -130,7 +147,7 @@ $(document).ready(function(){
     //call the function to display current game state array into
     //  a console log
     currentGameState.forEach(callbackConsoleLog);
-    // tttapi.markCell(id, data, token, callback);
+
 
     getWinner();
 
@@ -144,5 +161,3 @@ $(document).ready(function(){
 
 
 
-
-/
