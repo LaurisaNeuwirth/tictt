@@ -34,13 +34,13 @@ $(document).ready(function(){
   //CSS selector # look for id
   $('#main-button').html('Click to Play!');
 
+  //when I do a click event with element with id = board
   $('#board').on('click', function(event){
-    //when I do a click event with element with id = board
 
     //debug print statement
     console.log("The target of the click event was ", event.target);
 
-    //WHen there is a click event, store as squareClickedOn
+    //When there is a click event, store as squareClickedOn
     var squareClickedOn = event.target;
 
     //store the object id of the square that is clicked on
@@ -54,6 +54,27 @@ $(document).ready(function(){
 
     //write an X into the clicked square
     $(squareClickedOn).html(currentPlayer); // ui
+
+    //TO DO:
+    //Keep track of the moves by updating the currentGameState array with the new move
+    currentGameState[squareClickedId]=currentPlayer;
+
+    //debug to see if the array updates
+
+    var callbackConsoleLog=function callbackConsoleLog(currCell, index){
+      console.log(index, currCell);
+
+    }
+    currentGameState.forEach(callbackConsoleLog)
+
+
+
+    //write checkForWinner function
+    //if x won
+    //if o won
+    //if tie
+    //is game still in play
+
 
     //after the currentPlayer plays, invole swithTurms()
     switchTurns();
