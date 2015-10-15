@@ -52,18 +52,25 @@ var getWinner = function () {
   if (isWinner("X")) {      //if x won
     winner="X";
     alert(winner +" is the Winner!");
+    //reset board
+    currentGameState = ['', '', '', '', '', '', '', '', ''];
   }
   else if (isWinner("O")){  //if o won
     winner="O";
     alert(winner +" is the Winner!");
+    //reset board
+    currentGameState = ['', '', '', '', '', '', '', '', ''];
   }
   else if (false) {   //if tie
     winner="TIE";
     alert("It's a TIE!");
+    //reset board
+    currentGameState = ['', '', '', '', '', '', '', '', ''];
   } else {     //is game still in play
     winner=null;
   }
   return winner;
+
 };//end of getWinner function
 
 
@@ -122,7 +129,8 @@ $(document).ready(function(){
 
     //call the function to display current game state array into
     //  a console log
-    currentGameState.forEach(callbackConsoleLog)
+    currentGameState.forEach(callbackConsoleLog);
+    // tttapi.markCell(id, data, token, callback);
 
     getWinner();
 
@@ -137,26 +145,4 @@ $(document).ready(function(){
 
 
 
-// (1) Game starts with Button saying "Click to Play!"
-
-  //initialize button to read "Click to Play"
-
-
-// Once clicked, button changes to "X Move"  (----> Check for click)
-
-
-// Once X has clicked (----> Check for click, check for win) button changes to "Y Move"
-
-
-// Once Y has clicked (----> Check for click, check for win) button changes to "Y Move"
-
-
-// (2) Keep track of whose click it is, where they clicked, mark that space taken.
-
-
-// (3) When a winning condition is met, button changes to "X WINS!" or "Y WINS!"
-
-//The delay and change the button to "Rematch?"
-
-
-// (4) TIE: All 9 spaces are clicked but none of the winning scenarios are met.
+/

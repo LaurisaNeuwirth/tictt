@@ -1,3 +1,25 @@
+Information on this game:
+This Tic Tac Toe game starts with X always going first. After each click, the turn alternates between X and O.
+
+This game does allow for Ties. In that case, the game is ended.
+
+Technologies used:
+1. HTML to arrange the content
+2. CSS to format the content
+3. Javascript as the scripting language
+4. AJAZ to interact with the backend
+5. Git Hub Pages to host the game
+6. Both a local Git Hub repository and a remote repository hold the code and provided version control through the development process.
+
+Unresolved problems and desired functionality:
+1. The board does not refresh in the UI after a winner is declared.
+2. The initial design aspired to indicate several things that were not yet finished:
+- whose turn is current
+- who won (currently an alert is used instead)
+- a "Play Again?" text after a game is finished
+3. The extra menu pages on the menu were not created.
+* None of this functionality was required to meet the standard of a completed project
+
 User scenarios:
 
 (1) X wins and O loses, with empty spaces still on the board.
