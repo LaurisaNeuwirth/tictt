@@ -51,12 +51,15 @@ var getWinner = function () {
 
   if (isWinner("X")) {      //if x won
     winner="X";
+    alert(winner +" is the Winner!");
   }
   else if (isWinner("O")){  //if o won
     winner="O";
+    alert(winner +" is the Winner!");
   }
   else if (false) {   //if tie
     winner="TIE";
+    alert("It's a TIE!");
   } else {     //is game still in play
     winner=null;
   }
@@ -120,6 +123,8 @@ $(document).ready(function(){
     //call the function to display current game state array into
     //  a console log
     currentGameState.forEach(callbackConsoleLog)
+
+    getWinner();
 
     //after the currentPlayer plays, designate other player to take a turn
     switchTurns();
