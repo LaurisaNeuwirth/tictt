@@ -88,9 +88,6 @@ var getWinner = function () {
 //  the jQuery Ready method will invoke the function passed to it
 $(document).ready(function(){
 
-  debugger;
-
-
   //get the button telling user to start playing
   //CSS selector # look for id
   $('#main-button').html('Click to Play!');
@@ -115,7 +112,6 @@ $(document).ready(function(){
 
     //write an X into the clicked square
     $(squareClickedOn).html(currentPlayer); // ui
-debugger;
 
     // This is the object, which will be turned into JSON
     // to be sent to the backend server to record a cell change.
