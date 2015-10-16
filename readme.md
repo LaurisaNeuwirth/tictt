@@ -14,6 +14,7 @@ This game does allow for Ties. In that case, the game is ended.
 4. AJAZ to interact with the backend
 5. Git Hub Pages to host the game
 6. Both a local Git Hub repository and a remote repository hold the code and provided version control through the development process.
+7. Wireframe found at /TicTacToe Wireframe.jpg
 
 ###Unresolved problems and desired functionality:
 1. The board does not refresh in the UI after a winner is declared.
